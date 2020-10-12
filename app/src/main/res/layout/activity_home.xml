@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp">
+
+            <ImageView
+                android:id="@+id/btn_home_about"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/about_btn"
+                android:layout_margin="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="1"/>
+
+            <ImageView
+                android:id="@+id/home_logo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo"
+                android:paddingStart="10dp"
+                android:paddingEnd="35dp"
+                android:paddingTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/home_menu_materi"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/theory_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_menu_kdipk"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/home_menu_kdipk"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/kd_ipk_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_logo"
+                app:layout_constraintVertical_bias="0"/>
+
+            <ImageView
+                android:id="@+id/home_menu_lks"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/lks_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_menu_materi"
+                app:layout_constraintVertical_bias="0">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/home_menu_eval"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/evaluation_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_menu_lks"
+                app:layout_constraintVertical_bias="0">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/home_menu_angket"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/questionnaire_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_menu_eval"
+                app:layout_constraintVertical_bias="0">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/home_menu_upload"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/btn_upload_task"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_menu_angket"
+                app:layout_constraintVertical_bias="0">
+            </ImageView>
+
+            <Button
+                android:id="@+id/home_menu_btn_list_task"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_button"
+                android:textAllCaps="false"
+                android:text="Daftar Tugas Siswa"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_menu_upload"
+                app:layout_constraintVertical_bias="0"
+                android:visibility="gone">
+            </Button>
+
+            <Button
+                android:id="@+id/home_menu_btn_eval_result"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_button"
+                android:textAllCaps="false"
+                android:text="Hasil Evaluasi Siswa"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_menu_btn_list_task"
+                app:layout_constraintVertical_bias="0"
+                android:visibility="gone">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_home_logout"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/round_button"
+                android:textAllCaps="false"
+                android:text="Logout"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_home_about"
+                app:layout_constraintEnd_toStartOf="@+id/btn_home_about"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_home_about"
+                app:layout_constraintHorizontal_bias="1"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
